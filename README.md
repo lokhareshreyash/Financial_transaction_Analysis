@@ -1,9 +1,6 @@
 # Financial_transaction_Analysis
 End-to-end analysis of financial transactions with KPI extraction, anomaly detection, clustering, and classification using Python, SQL, and machine learning.
 
-# Financial Transaction Analysis and Anomaly Detection
-
-![Status](https://img.shields.io/badge/Status-Complete-green) ![Python](https://img.shields.io/badge/Language-Python-blue) ![Machine Learning](https://img.shields.io/badge/ML-KMeans%2C%20RandomForest-orange)
 
 ---
 
@@ -65,9 +62,18 @@ The dataset (`financial_anomaly_data.csv`) includes:
 - **Features:** `Amount`, `Hour`, `DayOfWeek`, `Merchant_enc`, `Location_enc`  
 - **Accuracy:** ~87%
 
-**Example Code:**
-```python
-clf = RandomForestClassifier(n_estimators=100, random_state=42)
-clf.fit(X_train, y_train)
 
+## Key Findings
 
+- **Anomalies Detected:** Top 5% transactions flagged as unusual.  
+- **High-Risk Accounts:** Accounts with repeated high-value anomalies identified.  
+- **Peak Hours:** Most transactions occur between 8 AM – 3 PM.  
+- **Revenue Concentration:** Few merchants contribute the majority of revenue.  
+- **Classification Performance:** Random Forest classifier achieved high precision, recall, and F1-score.  
+
+## Use Cases
+
+- **Fraud Detection & Prevention** – Quickly identify suspicious transactions.  
+- **Customer Behavior Analysis** – Understand transaction patterns and peak hours.  
+- **Merchant Performance Evaluation** – Identify high-revenue merchants.  
+- **Risk Management & Operational Planning** – Use insights for better decision-making.
